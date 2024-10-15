@@ -1,6 +1,6 @@
 import Button from "./Button";
 import styles from "./App.module.css";
-function App() {
+function _App() {
   return (
     <div>
       <h1 className={styles.title}>Welcome back!</h1>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default _App;

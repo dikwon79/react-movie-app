@@ -2,12 +2,19 @@ import { useState } from "react";
 
 function App() {
 
-  const [counter, setValue] = useState(0);
-  const onClick = () =>setValue((prev) => prev + 1);
+  const [toDo, setToDo] = useState("");
+  const onChange = (event) => setToDo(event.target.value);
+  console.log(toDo);
+  
   return (
     <div>
-      <h1>{counter}</h1>
-      <button onClick={onClick}>click me</button>
+      <input 
+        onChange={onChange}
+        value={toDo}
+        type="text" 
+        placeholder="Write you todo.." 
+      />
+
     </div>
   );
 }
